@@ -3,80 +3,54 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+@inproceedings{chen2022continuous,
+  abbr={MICCAI workshop},
+  highlight={Oral},
+  title={Continuous longitudinal fetus brain atlas construction via implicit neural representation},
+  author={Chen, Lixuan and Wu, Jiangjie and Wu, Qing and Wei, Hongjiang and Zhang, Yuyao},
+  abstract={Longitudinal fetal brain atlas is a powerful tool for understanding and characterizing the complex process of fetus brain development. Existing fetus brain atlases are typically constructed by averaged brain images on discrete time points independently over time. Due to the differences in onto-genetic trends among samples at different time points, the resulting atlases suffer from temporal inconsistency, which may lead to estimating error of the brain developmental characteristic parameters along the timeline. To this end, we proposed a multi-stage deep-learning framework to tackle the time inconsistency issue as a 4D (3D brain volume + 1D age) image data denoising task. Using implicit neural representation, we construct a continuous and noise-free longitudinal fetus brain atlas as a function of the 4D spatial-temporal coordinate. Experimental results on two public fetal brain atlases (CRL and FBA-Chinese atlases) show that the proposed method can significantly improve the atlas temporal consistency while maintaining good fetus brain structure representation. In addition, the continuous longitudinal fetus brain atlases can also be extensively applied to generate finer 4D atlases in both spatial and temporal resolution.},
+  booktitle={MICCAI workshop PIPPI},
+  pages={38--47},
+  year={2022},
+  organization={Springer},
+  html={https://link.springer.com/chapter/10.1007/978-3-031-17117-8_4},
+  pdf={https://arxiv.org/pdf/2209.06413.pdf},
+  selected={true},
+  image={/assets/pub_img/MICCAI_workshop_PIPPI.jpeg},
+  award={Best Paper Honorable Mention}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@inproceedings{9761507,
+  abbr={IEEE ISBI 2023},
+  title={ASSURED: A Self-supervised Deep Decoder Network for Fetus Brain MRI Reconstruction},
+  author={Wu, Jiangjie and Chen, Lixuan and Li, Zhenghao and Wang, Rongpin and Wei, Hongjiang and Zhang, Yuyao},
+  abstract={High-resolution Magnetic Resonance Imaging (MRI) volume reconstruction from multiple arbitrary orientation motion-corrupted 2D slices is crucial for fetal brain MRI studies. Currently, most existing methods follow two-step approaches that iteratively perform slice to volume registration (SVR) and super-resolution reconstruction (SRR). However, the 3D volume reconstruction is often corrupted due to slice misalignment and brain anatomy blurring caused by severe motion during MR data collection, making the quantification challenging. To tackle these issues, we propose a novel learning-based self-supervised volume reconstruction technique that is robust to slice misalignment and motion artifacts. Specially, we combine a comprehensive forward model to present the complex image degradation process and an under-parameterized deep decoder structure to reduce the network overfitting with image artifacts caused by slice misalignment and motion. This methodology requires only one coarse SVR step in the whole reconstruction process and does not need any training dataset in SRR. We evaluated the performance of our technique on simulated MRI from brain atlas and on real clinical scanning fetus MR data. Experimental results demonstrated that the proposed approach achieved superior fetus brain reconstruction results compared with state-of-the-art methods},
+  booktitle={IEEE ISBI},  
+  year={2023},
+  selected={true},
+  image={/assets/pub_img/ISBI2023.png}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+@InProceedings{10.1007/978-3-031-16446-0_1,
+  abbr={MICCAI 2023},
+  author="Wu, Jiangjie and Chen, Lixuan and Li, Zhenghao and Wang, Rongpin and Wei, Hongjiang and Zhang, Yuyao",
+  title="ALIGNER: A Self-supervised Slice-to-Volume Registration Network for Fetal Brain MRI Reconstruction.",
+  booktitle="MICCAI",
+  year="2023",
+  state = "(under review)",
+  abstract="3D fetal brain Magnetic Resonance Imaging (MRI) volume reconstruction from multiple stacks of thick slices is critical for fetal brain development study. However, due to the unpredictable motion of the fetus, volumetric reconstruction is a very challenging problem. The performance substantially depends on the quality of the slice-tovolume registration (SVR) process. In this work, we propose a novel self-supervised SVR approach that accurately predicts the motion correction without any training dataset. We formulate the SVR as a function that maps the input 2D thick slice and the target 3D volume to a rigid transformation matrix, which aligns the slice to the correct position in the volume. This function is parameterized using a convolutional neural network (CNN). The network is optimized by minimizing the difference between the volume slicing at the predicted position and the input 2D slice. Specifically, the volume slicing process fully considers the physical degradation effects (e.g., slice thickness and the point spread function (PSF) blurring) during clinical MR image slice acquisition. Experimental results on both simulation and clinical scanning data demonstrate that our proposed model achieves high-accuracy SVR performance on severe motion-corrupted fetal MRI data with various in-plane resolutions and slice thicknesses. Using as a robust SVR initialization, our proposed method significantly improves the performance of existing fetal brain MRI reconstruction methods and has the potential to facilitate more accurate and reliable research on fetal brain development.",
+  selected={true},
+  image={/assets/pub_img/MICCAI_2023.jpeg}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{NeuroImage,
+  abbr={NeuroImage},
+  author="Chen, Lixuan and Wu, Jiangjie and Wu, Qing and Lao, Guoyan and Wei, Hongjiang and Zhang, Yuyao",
+  title="COLLATOR: Consistent Spatial-Temporal Longitudinal Atlas Construction via Implicit Neural Representation.",
+  journal = {NeuroImage},
+  year="2023",
+  state = "(under review)",
+  abstract="Longitudinal brain atlases are essential tools for studying brain development. However, existing atlases often suffer from temporal inconsistency, due to the typical atlas construction method that averages brain images on discrete time points independently. Additionally, the differences in onto-genetic trends among samples at different time points further compound this issue. These inconsistencies may significantly impact the accuracy of brain developmental characteristic analysis. In this paper, we propose a multi-stage deep-learning framework to address this issue by treating it as a 4D image denoising task, where the 4D data consists of 3D brain volumes and 1D age. Our framework employs implicit neural representation to construct a continuous and noise-free longitudinal brain atlas as a function of the 4D spatial-temporal coordinate. We evaluate our approach on two modalities of brain atlases (QSM and fetus atlases) and show that our method significantly improves temporal consistency while maintaining accurate representation of brain structures. Furthermore, the continuous functions generated by our method can be used to generate 4D atlases with higher spatial and temporal resolution.",
+  selected={true},
+  image={/assets/pub_img/NueroImage.gif}
 }

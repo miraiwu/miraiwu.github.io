@@ -7,18 +7,25 @@ subtitle:
 
 profile:
   align: right
-  image: myphoto.jpeg
+  image: clx.jpeg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>GHC 5007</p>
-    <p>4902 Forbes Ave</p>
-    <p>Pittsburgh, PA 15213</p>
+  # address: >
+  #   <p>GHC 5007</p>
+  #   <p>4902 Forbes Ave</p>
+  #   <p>Pittsburgh, PA 15213</p>
+
+social: true  # includes social icons at the bottom of the page
 
 news: true  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+selected_papers: true # includes a list of papers marked as "selected={true}"
 ---
 
-I am Ziyue Qiu (邱子悦 in Chinese), a first-year PhD student in the Computer Science Department at Carnegie Mellon University, advised by [Greg Ganger](http://users.ece.cmu.edu/~ganger/) and [George Amvrosiadis](http://users.ece.cmu.edu/~gamvrosi/). I am interested in storage systems, operating systems and other system issues.
+I am Lixuan Chen (陈利瑄 in Chinese), a second-year M.S. student at ShanghaiTech University (Shanghai, China), advised by Prof. [Yuyao Zhang](https://sist.shanghaitech.edu.cn/2020/0707/c7499a53859/page.htm). Before that, I received my B.E. degree at ShanghaiTech University in 2021.
 
-Previously, I was fortunate to work with Prof. [Cheng Li](http://staff.ustc.edu.cn/~chengli7/) at USTC, Prof. [Xiaosong Ma](https://www.hbku.edu.qa/en/staff/dr-xiaosong-ma) at Qatar Computing Research Institute & HKBU, Dr. [Qi Chen](https://www.microsoft.com/en-us/research/people/cheqi/), Dr. [Mao Yang](https://www.microsoft.com/en-us/research/people/maoyang/) at MSR-Asia.
+I am interested in a variety of topics in <strong>computer vision</strong> and <strong>medical image processing</strong>. My current research focuses include: <br>
+* Implicit neural representation; <br>
+* Brain atlases construction; <br>
+* Self-supervised volume reconstruction; <br>
+* Weakly/semi-supervised learning for medical image segmentation (especially for fetal brain).
+
+See more in the [detailed CV](http://lattes.cnpq.br/4761632587625158).

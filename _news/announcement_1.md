@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-09-15 09:20:00-0400
+date: 2021-9-01 0:00:00-0400
 inline: true
 ---
 
-New theme for my homepage! New start in CMU :) :sparkles:
+Join Prof. [Zhang](https://sist.shanghaitech.edu.cn/2020/0707/c7499a53859/page.htm)'s lab at ShanghaiTech University to pursue M.S. Degree :) :sparkles:

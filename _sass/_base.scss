@@ -292,6 +292,24 @@ footer.sticky-bottom {
   font-size: 0.9rem;
 }
 
+.hl_cv {
+  margin-bottom: 40px;
+  
+  .hl_card {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    
+    .hl_list-group-item {
+      background-color: var(--global-card-bg-color);
+
+      .hl_badge {
+        color: var(--global-text-color) !important;
+        background-color: var(--global-theme-color) !important;
+      }
+    }
+  }
+}
+
 // CV
 
 .cv {

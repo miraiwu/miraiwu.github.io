@@ -2,32 +2,65 @@
   type: map
   contents:
     - name: Full Name
-      value: Ziyue Qiu
+      value: Lixuan Chen
     - name: Date of Birth
-      value: Jan 2002
+      value: Aug. 1999
     - name: Languages
       value: English, Mandarin
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: Carnegie Mellon University (CMU), Pittsburgh, USA
-      year: 2022
-      description:
-        - Computer Science
-        - Advisor(s) Greg Ganger and George Amvrosiadis
-    - title:  Bachelor
-      institution: University of Science and Technology of China (USTC), Hefei, China
-      year: 2018
+    - title: M.S.
+      institution: ShanghaiTech University, Shanghai, China
+      year: 2021
       description:
         - Computer Science and Technology
-        - Advisor Cheng Li
-        - GPA 3.92/4.3
-        - title: Special Honors
+        - GPA 3.63/4.3 (Major 3.73/4)
+        - Advisor Yuyao Zhang
+        - title: Core Course
           contents:
-            - Special Class for the Gifted Young (under 16 years old)
-            - Hua Xia Talent Program
+            -  Deep learning, Medical image processing and analysis, Digital Image Processing
+    - title:  Bachelor
+      institution: ShanghaiTech University, Shanghai, China
+      year: 2017
+      description:
+        - Computer Science and Technology
+        - GPA 3.39/4.3
+
+- title: Projects
+  type: time_table
+  contents:
+    # - title: Professor of Theoretical Physics
+    #   institution: Institute for Advanced Study, Princeton University
+    #   year: 1933 - 1955
+    #   description:
+    #     - Description 1.
+    #     - Description 2.
+    #     - title: Description 3.
+    #       contents:
+    #         - Sub-description 1.
+    #         - Sub-description 2.
+    - title: Longitudinal Brain Atlases Construction via implicit neural representation. 
+      year: 2021-present
+      description:
+        - Existing longitudinal atlas construction methods averaged brain images on discrete time points independently, leading to temporal inconsistency issue.
+    - title: Robust Self-supervised Volume Reconstruction for Fetal Brain MRI. 
+      year: 2021-present
+      description:
+        - Proposed a learning-based self-supervised volume reconstruction technique, which overcomes challenges in fetal brain MRI studies caused by motion artifacts and slice misalignment.
+        - Combined a comprehensive forward model and under-parameterized deep decoder structure to reduce network overfitting and image artifacts caused by slice misalignment and motion.
+        - Our method achieves the state-of-the-art performance on both simulated MRI from brain atlas and real clinical scanning fetus MR data.
+    - title: Self-supervised Slice-to-Volume Registration Despite Fetal Motion. 
+      year: 2021-present
+      description:
+        - Formulate the slice-to-volume (SVR) as a function that maps the input 2D thick slice and the target 3D volume to a rigid transformation matrix, to address the challenge of fetal motion.
+        - Our method achieves high-accuracy SVR performance on severe motion-corrupted fetal MRI data with various in-plane resolutions and slice thicknesses.
+    - title: Longitudinal Infant Brain MRI Segmentation. 
+      year: 2021
+      description:
+        - Investigate different segmentation model designs and extend DenseNet to 3D volumetric data to to perform 3D volumetric segmentation.
+        - The method achieves dice similarity coefficient (DSC) of 90.325% of three brain tissues across five time points.
 
 - title: Experience
   type: time_table
@@ -43,14 +76,12 @@
     #         - Sub-description 1.
     #         - Sub-description 2.
     - title: Research Intern
-      institution: System Group, Microsoft Research Asia
-      year: 2021-2022
+      institution: NSB BLCTO Technology Vision&Architecture, Bell Labs
+      year: 2020-2021
       description:
-        - Worked on caching project
+        - Propose a behavior recognition method based on meta-learning using WiFi channel state information(CSI).
+        - Our method enables the model to rapidly adapt to new environments, as demonstrated through its performance on two public datasets and real-world data, in comparison to traditional supervised learning.
 
-    - title: Undergraduate Researcher
-      institution: Advanced Data Systems Laboratory (ADSL), USTC, Hefei, China
-      year: 2021-2022
 
 
 # - title: Open Source Projects
@@ -59,22 +90,6 @@
 #     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
 #       year: 2015-now
 #       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 2021
-      items: 
-        - China National Scholarship (Top 1%)
-    - year: 2020
-      items: 
-        - SGY Sihua Scholarship (4/50)
-        - Hua Xia Talent Program First Prize Scholarship
-        - Zhong Hai Memorial Scholarship (2/200)
-    - year: 2019
-      items: 
-        - SGY Class of 87 Innovation Scholarship (10/1,000) 
-        - Chen Guoliang Scholarship (Top 10%) 
 
 # - title: Academic Interests
 #   type: nested_list
@@ -91,4 +106,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Ultimate Frisbee, Sudoku, Criminology, Anime
+    - <u>Hobbies:</u> Dance

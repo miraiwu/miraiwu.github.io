@@ -7,4 +7,4 @@ nav: true
 nav_order: 5
 ---
 
-2021, Mathematical Logic, USTC
+2021 Fall, CS270: Digital Image Processing
