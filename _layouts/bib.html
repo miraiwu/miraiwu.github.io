@@ -2,7 +2,7 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+        <div class="col-sm-3 {% if entry.preview %}preview{% else %}abbr{% endif %}" style="text-align:center">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
@@ -27,9 +27,10 @@
             {%- if site.data.venues[entry.highlight].color != blank -%}
               {%- assign venue_style = site.data.venues[entry.highlight].color | prepend: 'style="background-color:' | append: '"' -%}
             {%- endif -%}
-            <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.highlight].url}}">{{entry.highlight}}</a></abbr>
+            <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.highlight].url}}" style="background:black;color:rgb(226, 43, 43);">{{entry.highlight}}</a></abbr>
           {%- else -%}
-            <abbr class="badge">{{entry.highlight}}</abbr>
+            <abbr class="badge" style="background:white;border-style: solid;border-width: 2px;border-color:#B509AC">
+              <div style="color:#B509AC;">{{entry.highlight}}</div></abbr>
           {%- endif -%}
         {%- endif -%}
         <!-- </div> -->
