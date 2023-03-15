@@ -28,4 +28,4 @@ I am interested in a variety of topics in <strong>computer vision</strong> and <
 * Self-supervised volume reconstruction; <br>
 * Weakly/semi-supervised learning for medical image segmentation (especially for fetal brain).
 
-See more in the [detailed CV](http://lattes.cnpq.br/4761632587625158).
+See more in the [detailed CV](https://maopaom.github.io/assets/pdf/clx.pdf).
