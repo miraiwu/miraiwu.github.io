@@ -45,17 +45,21 @@
       year: 2021-present
       description:
         - Existing longitudinal atlas construction methods averaged brain images on discrete time points independently, leading to temporal inconsistency issue.
+        - Modeled the time inconsistency issue as a 4D image denoising task, and use implicit neural representation to construct continuous and noise-free longitudinal brain atlases.
+        - Evaluated on two modalities of brain atlases (QSM and fetus atlases), and significantly improves temporal consistency while maintaining accurate representation of brain structures.
+        - Extended to generate finer (i.g. 0.5-week interval) 4D atlases with higher spatial and temporal resolution.
     - title: Robust Self-supervised Volume Reconstruction for Fetal Brain MRI. 
       year: 2021-present
       description:
-        - Proposed a learning-based self-supervised volume reconstruction technique, which overcomes challenges in fetal brain MRI studies caused by motion artifacts and slice misalignment.
+        - Due to slice misalignment and motion artifacts, the fetal brain MRI reconstruction is often corrupted.
         - Combined a comprehensive forward model and under-parameterized deep decoder structure to reduce network overfitting and image artifacts caused by slice misalignment and motion.
-        - Our method achieves the state-of-the-art performance on both simulated MRI from brain atlas and real clinical scanning fetus MR data.
+        - Outperformed SOTA methods (SVRTK, NiftyMIC, and SSGNN) by achieving superior results across five matrices (i.g. 24$\%$ improvement in PSNR) on both simulated and real clinical data.
     - title: Self-supervised Slice-to-Volume Registration Despite Fetal Motion. 
       year: 2021-present
       description:
-        - Formulate the slice-to-volume (SVR) as a function that maps the input 2D thick slice and the target 3D volume to a rigid transformation matrix, to address the challenge of fetal motion.
-        - Our method achieves high-accuracy SVR performance on severe motion-corrupted fetal MRI data with various in-plane resolutions and slice thicknesses.
+        - Slice-to-volume registration (SVR), which corrects the slice misalignment, is essential for subsequent 3D volume reconstruction.
+        - Incorporated the MRI acquisition model into the SVR network to accurately predict the spatial transformation aligning 2D slices to 3D volumes.
+        - Achieved better SVR performance (i.e. lower MAE and RMSE value), and benefited the existing fetal brain MRI reconstruction methods.
     - title: Longitudinal Infant Brain MRI Segmentation. 
       year: 2021
       description:
@@ -80,8 +84,7 @@
       year: 2020-2021
       description:
         - Propose a behavior recognition method based on meta-learning using WiFi channel state information(CSI).
-        - Our method enables the model to rapidly adapt to new environments, as demonstrated through its performance on two public datasets and real-world data, in comparison to traditional supervised learning.
-
+        - Enabled the model to rapidly adapt to new environments, as demonstrated through its performance on two public datasets and real-world data, in comparison to traditional supervised learning.
 
 
 # - title: Open Source Projects
