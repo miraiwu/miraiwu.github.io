@@ -7,4 +7,4 @@ nav: true
 nav_order: 6
 ---
 
-* [<b>Qing Wu</b>](https://iwuqing.github.io/) from [SMILE:smile: LAB](https://smilelab.com.cn/) at [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/).
+* [<b>Qing Wu</b>](https://iwuqing.github.io/) from SMILE:smile: LAB at [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/).

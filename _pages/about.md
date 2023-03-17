@@ -20,7 +20,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 ---
 
-I am Lixuan Chen (陈利瑄 in Chinese), a second-year M.S. student in [SMILE:smile: LAB](https://smilelab.com.cn/) at [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/) (Shanghai, China), advised by Prof. [Yuyao Zhang](https://sist.shanghaitech.edu.cn/2020/0707/c7499a53859/page.htm). Before that, I received my B.E. degree at ShanghaiTech University in 2021.
+I am Lixuan Chen (陈利瑄 in Chinese), a second-year M.S. student in SMILE:smile: LAB at [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/) (Shanghai, China), advised by Prof. [Yuyao Zhang](https://sist.shanghaitech.edu.cn/sist_en/2020/0814/c7582a54827/page.htm). Before that, I received my B.E. degree at ShanghaiTech University in 2021.
 
 I am interested in a variety of topics in <strong>computer vision</strong> and <strong>medical image processing</strong>. My current research focuses include: <br>
 * Implicit neural representation; <br>
