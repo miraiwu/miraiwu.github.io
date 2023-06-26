@@ -48,8 +48,8 @@
         - Formulated the time inconsistency issue as a 4D image denoising task, and used implicit neural representation to construct continuous and noise-free longitudinal brain atlases.
         - Improved temporal consistency while maintaining accurate representation of brain structures on two modalities of brain atlases (QSM and fetus atlases).
         - Generated finer 4D atlases with higher temporal resolution (e.g., 0.5-week interval).
-      year: 2021-present
     - title: Robust Self-supervised 3D Fetal Brain MRI Reconstruction.    
+      year: 2021-present
       description:
         - Tackled the issue of corrupted reconstruction of the fetal brain caused by slice misalignment and blurring of the brain anatomy due to severe motion during MR data collection.
         - Combined the MRI acquisition model and a Deep Decoder network to effectively reduce the image artifacts resulting from slice misalignment and motion.
