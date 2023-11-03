@@ -73,7 +73,7 @@
         </div>
 
         <!-- Entry bib key -->
-        <div id="{{entry.key}}" class="col-sm-8">
+        <div id="{{entry.key}}" class="col-sm-9">
         {% if entry.type == "thesis" -%}
           {{reference}}
         {%- else %}
@@ -107,12 +107,14 @@
             {%- endif -%}
             
             {%- if forloop.length > 1 -%}
+              <!-- {%- if forloop.first == false -%},&nbsp;{%- endif -%} -->
+              <!-- {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%} -->
               {%- if forloop.first == false -%},&nbsp;{%- endif -%}
-              {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
+              {%- if forloop.last and author_array_limit == author_array_size -%}{%- endif -%}
             {%- endif -%}
             {%- if author_is_self -%}
-              <!-- <em>{{author.first}} {{author.last}}</em> -->
-              <strong>{{author.first}} {{author.last}}</strong>
+              <em>{{author.first}} {{author.last}}</em>
+              <!-- <strong>{{author.first}} {{author.last}}</strong> -->
             {%- else -%}
               {%- if coauthor_url -%}
                 <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
@@ -158,22 +160,28 @@
 
           <!-- Journal/Book title and date -->
           {% if entry.type == "article" -%}
-            {%- capture entrytype -%}<strong>{{entry.journal}}</strong>{%- endcapture -%}
+            <!-- {%- capture entrytype -%}<strong>{{entry.journal}}</strong>{%- endcapture -%} -->
+            {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
-            {%- capture entrytype -%}In<strong> {{entry.booktitle}}</strong> {%- endcapture -%}
+            <!-- {%- capture entrytype -%}In<strong> {{entry.booktitle}}</strong> {%- endcapture -%} -->
+            {%- capture entrytype -%}<em> {{entry.booktitle}}</em> {%- endcapture -%}
           {%- elsif ["incollection"] contains entry.type -%}
             {%- capture entrytype -%}In<strong> {{entry.booktitle}}</strong> {%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
+
           {%- if entry.month -%}
             {%- capture entrymonth -%}{{ " " }}{{ entry.month | capitalize }}{%- endcapture -%}
           {%- endif -%}
           {%- if entry.year -%}
-            {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
+            <!-- {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%} -->
+            {%- capture entryyear -%}{%- endcapture -%}
           {%- endif -%}
           {%- if entry.state -%}
             {%- capture entrystate -%}{{ " " }}{{entry.state}}{%- endcapture -%}
+          {%- else -%}
+            {%- capture entrystate -%}{%- endcapture -%}
           {%- endif -%}
           {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{{ entrystate }}{%- endcapture -%}
           {% if entry.award -%}
