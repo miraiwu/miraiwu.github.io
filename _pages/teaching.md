@@ -7,4 +7,5 @@ nav: true
 nav_order: 5
 ---
 
-2021 Fall, CS270: Digital Image Processing
+2021 Fall, BME2101: Medical image processing and analysis
+

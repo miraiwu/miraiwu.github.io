@@ -16,18 +16,7 @@
   selected={true},
 }
 
-@article{wu2023unsupervised,
-  title={Unsupervised Polychromatic Neural Representation for CT Metal Artifact Reduction},
-  author={Qing Wu and Lixuan Chen and Ce Wang and Hongjiang Wei and S. Kevin Zhou and Jingyi Yu and Yuyao Zhang},
-  abstract={Emerging neural reconstruction techniques based on tomography (e.g., NeRF, NeAT, and NeRP) have started showing unique capabilities in medical imaging. In this work, we present a novel Polychromatic neural representation (Polyner) to tackle the challenging problem of CT imaging when metallic implants exist within the human body. The artifacts arise from the drastic variation of metal's attenuation coefficients at various energy levels of the X-ray spectrum, leading to a nonlinear metal effect in CT measurements. Reconstructing CT images from metal-affected measurements hence poses a complicated nonlinear inverse problem where empirical models adopted in previous metal artifact reduction (MAR) approaches lead to signal loss and strongly aliased reconstructions. Polyner instead models the MAR problem from a nonlinear inverse problem perspective. Specifically, we first derive a polychromatic forward model to accurately simulate the nonlinear CT acquisition process. Then, we incorporate our forward model into the implicit neural representation to accomplish reconstruction. Lastly, we adopt a regularizer to preserve the physical properties of the CT images across different energy levels while effectively constraining the solution space. Our Polyner is an unsupervised method and does not require any external training data. Experimenting with multiple datasets shows that our Polyner achieves comparable or better performance than supervised methods on in-domain datasets while demonstrating significant performance improvements on out-of-domain datasets. To the best of our knowledge, our Polyner is the first unsupervised MAR method that outperforms its supervised counterparts.},
-  journal={Advances in Neural Information Processing Systems 2023},
-  pdf={https://arxiv.org/abs/2306.15203},
-  code={https://github.com/iwuqing/Polyner},
-  year={2023},
-  abbr={NeurIPS 2023},
-  preview={polyner.png},
-  selected={true},
-}
+
 
 @inproceedings{9761507,
   abbr={IEEE ISBI 2023},
@@ -79,4 +68,23 @@
   selected={true},
   preview="MICCAI_workshop_PIPPI.jpeg",
   award={Best Paper Honorable Mention},
+}
+
+@article{wu2021age,
+  title={Age-specific structural fetal brain atlases construction and cortical development quantification for Chinese population},
+  author={Wu, Jiangjie and Sun, Taotao and Yu, Boliang and Li, Zhenghao and Wu, Qing and Wang, Yutong and Qian, Zhaoxia and Zhang, Yuyao and Jiang, Ling and Wei, Hongjiang},
+  journal={Neuroimage},
+  volume={241},
+  pages={118412},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@inproceedings{wu2021longitudinal,
+  title={Longitudinal Chinese population structural fetal brain atlases construction: toward precise fetal brain segmentation},
+  author={Wu, Jiangjie and Yu, Boliang and Wang, Lihui and Yang, Qing and Zhang, Yuyao},
+  booktitle={2021 43rd Annual International Conference of the IEEE Engineering in Medicine \& Biology Society (EMBC)},
+  pages={2745--2749},
+  year={2021},
+  organization={IEEE}
 }
